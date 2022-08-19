@@ -22,6 +22,9 @@ const Refs = () => {
   const changeValue = () => {
     valueRef.current.value = 1000;
     valueRef.current.style.color = "pink";
+    console.log(
+      Number(inputRef.current.value) + Number(valueRef.current.value)
+    );
   };
 
   return (

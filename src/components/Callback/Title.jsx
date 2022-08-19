@@ -20,8 +20,8 @@ const Title = () => {
     document.title = `${heading}`;
   }, [title]);
 
-  console.log("rendering title");
-  console.log(`hello`);
+  //console.log("rendering title");
+  //console.log(`hello`);
 
   return (
     <>

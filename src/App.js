@@ -23,6 +23,13 @@ import CountT from "./components/CustomHooks/CountT";
 import FirstStyle from "./components/Styled Components/FirstStyle";
 import ColorChildren from "./ColorChildren";
 import ColorParent from "./ColorParent";
+import Title from "./components/Callback/Title";
+import UseEHook from "./components/Callback/UseEHook";
+import A from "./components/hoc/A";
+import B from "./components/hoc/B";
+import C from "./components/hoc/C";
+import { useGlobalContext } from "./components/Context API/Context";
+import CustomReducer from "./components/Reducer/CustomReducer";
 //import JsonData from "./JSON/JsonData";
 
 export const CountContext = React.createContext();
@@ -42,6 +49,7 @@ const reducer = (state, action) => {
 };
 
 function App() {
+  const { count2, counter } = useGlobalContext();
   const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
@@ -121,6 +129,19 @@ function App() {
       <br />
       <br />
       <ColorParent />
+      <br />
+      <br />
+      <Title />
+      <UseEHook />
+      <A name="AAA" />
+      <B name="BBB" />
+      <C name="CCC" />
+      <FetchDataTwo />
+      <h1>{count2} hello</h1>
+      <button onClick={counter}>Click ME</button>
+      <br />
+      <br />
+      <CustomReducer />
       <br />
       <br />
     </>

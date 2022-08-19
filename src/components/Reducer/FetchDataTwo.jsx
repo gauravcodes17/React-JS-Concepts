@@ -40,7 +40,7 @@ const FetchDataTwo = () => {
       })
       .catch((err) => {
         dispatch({
-          type: "FETCH_SUCCESS",
+          type: "FETCH_ERROR",
         });
       });
   }, []);
