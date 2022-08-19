@@ -3,6 +3,7 @@ import React from "react";
 // React JS...
 // usememo, usecallback, useref, HOC, useEffect, usereducer, contextAPI
 // usecontext
+// redux
 
 const Button = ({ handleClick, children }) => {
   console.log(`rendering button = ${children}`);
